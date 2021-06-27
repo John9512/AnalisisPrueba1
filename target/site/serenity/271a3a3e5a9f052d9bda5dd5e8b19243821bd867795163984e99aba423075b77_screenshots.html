@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="4393db3d8c8354fefbbffadd43ee448de775d4be81e30afb2dad3c5bfcb26742.html">Ingresar A La Pagina Utest.Com, Diligenciar El Formulario Y Crear Un Nuevo Usuario</a></span>
+                > <span class="truncate-60"><a
+                    href="271a3a3e5a9f052d9bda5dd5e8b19243821bd867795163984e99aba423075b77.html">Buscar la pagina para la automatizacion </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-06-2021 18:38</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Ingresar A La Pagina Utest.Com, Diligenciar El Formulario Y Crear Un Nuevo Usuario </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como un usuario, quiero entrar a la pagina Utest.com y automatizar el ingreso de datos y registro
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Buscar la pagina para la automatizacion
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.Choucair.PruebaJohn.tasks.Llenar2.performAs(Llenar2.java:30)<br />co.com.Choucair.PruebaJohn.stepdefinitions.CreacionUsuarioStepDefinitions.seLlenaElFormularioDeDatosPedidos(CreacionUsuarioStepDefinitions.java:29)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource5921233652417874353.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="33293601058dab89450991d01ae5ba997296a0fe5e3074d1c1af02bf1ce38933.png" title=" Brandon abrir" width="1366"/>
+                <img src="33293601058dab89450991d01ae5ba997296a0fe5e3074d1c1af02bf1ce38933.png" title=" Brandon opens the Principal page" width="1366"/>
+                <img src="33293601058dab89450991d01ae5ba997296a0fe5e3074d1c1af02bf1ce38933.png" title=" Brandon abrir (completed)" width="1366"/>
+                <img src="c0e7d60e7a9d00fd4ed889f5b184b72eec374d82706f35d6e483286c8d4c7782.png" title=" Given John quiere crear su usuario en la pagina" width="1366"/>
+                <img src="c0e7d60e7a9d00fd4ed889f5b184b72eec374d82706f35d6e483286c8d4c7782.png" title=" Brandon ingresa" width="1366"/>
+                <img src="c0e7d60e7a9d00fd4ed889f5b184b72eec374d82706f35d6e483286c8d4c7782.png" title=" Brandon clicks on bOT&Atilde;&ldquo;N para ingresar al registro del usuario" width="1366"/>
+                <img src="c0e7d60e7a9d00fd4ed889f5b184b72eec374d82706f35d6e483286c8d4c7782.png" title=" Brandon ingresa (completed)" width="1366"/>
+                <img src="c0e7d60e7a9d00fd4ed889f5b184b72eec374d82706f35d6e483286c8d4c7782.png" title=" Given John quiere crear su usuario en la pagina (completed)" width="1366"/>
+                <img src="25d40f5c77761e40513f4a9ca70ba2b31bf560659d237da6b34fbf33870a2b62.png" title=" When Se llena el formulario de datos pedidos" width="1366"/>
+                <img src="25d40f5c77761e40513f4a9ca70ba2b31bf560659d237da6b34fbf33870a2b62.png" title=" Brandon llenar1" width="1366"/>
+                <img src="25d40f5c77761e40513f4a9ca70ba2b31bf560659d237da6b34fbf33870a2b62.png" title=" Brandon enters 'John' into campo para ingresar el nombre del usuario" width="1366"/>
+                <img src="5c2a7182f590b5b49bad1f5acbbd60000a62e3729d11ad66805e76e4754ccc1e.png" title=" Brandon enters 'Cabrera' into campo para ingresar el Apellido del usuario" width="1366"/>
+                <img src="79272ff547e4dd6cdc0777b8f620407585496c04eeb71b44efb1a69bfaa543d2.png" title=" Brandon enters 'jmariocaso9512@hotmail.com' into campo para ingresar el Email del usuario" width="1366"/>
+                <img src="1a48832c3bfcf93898b4f0bfdf142ab00a15709463c20b9e36960b4b2398d749.png" title=" Brandon clicks on Lista desplegable para elegir mes de nacimiento" width="1366"/>
+                <img src="8cbf192644cadd8ac5f7036f436cc947e71cfc659bc4d81ca348d279cde6fdbc.png" title=" Brandon clicks on selecci&Atilde;&sup3;n mes de nacimiento" width="1366"/>
+                <img src="a89e1baa3adbc2047aa1bb372a12ffa0746405f72667b58a565a038efa6f4730.png" title=" Brandon clicks on selecci&Atilde;&sup3;n a&Atilde;&plusmn;o de nacimiento" width="1366"/>
+                <img src="90c8a82e80bba1c8c5304ad05f765c39545d72f680fc661c981435df9b794d8a.png" title=" Brandon enters 'Spanish' into selecci&Atilde;&sup3;n de idioma" width="1366"/>
+                <img src="09fc73513493cbd3a7f19a0da6d929a4d0e168a67abab13b1ea7d27d17f29442.png" title=" Brandon clicks on selecci&Atilde;&sup3;n de idioma espa&Atilde;&plusmn;ol" width="1366"/>
+                <img src="8e8070195cd8083ca7f3767c6045f8b0eb9a9827dfbadbde56dba1b2031aa371.png" title=" Brandon clicks on Click para la siguiente secci&Atilde;&sup3;n" width="1366"/>
+                <img src="8e8070195cd8083ca7f3767c6045f8b0eb9a9827dfbadbde56dba1b2031aa371.png" title=" Brandon llenar1 (completed)" width="1366"/>
+                <img src="e9249456a82ae9c3e0a26c09f12e6f9ae0b578770ed7d2da5eb34479255c430f.png" title=" Brandon llenar2" width="1366"/>
+                <img src="e9249456a82ae9c3e0a26c09f12e6f9ae0b578770ed7d2da5eb34479255c430f.png" title=" Brandon enters '520001' into campo para ingresar el c&Atilde;&sup3;digo Postal del usuario" width="1366"/>
+                <img src="905c474dc93089670d0997deb92bcf69e9352bc874972c583f2505dff10e35d6.png" title=" Brandon clicks on campo para ingresar el Pa&Atilde;&shy;s del usuario: <span class='error-color'>ERROR</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
