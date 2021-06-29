@@ -13,17 +13,24 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
 
 public class Llenar2 implements Task {
-    public static Llenar2 ElFormulario2() {
-        return instrumented(Llenar2.class);
+    public static Llenar2 ElFormulario2(String strCiudad, String strCodigoPostal) {
+        return instrumented(Llenar2.class,strCiudad,strCodigoPostal);
     }
 
+    public Llenar2(String strCiudad, String strCodigoPostal) {
+        this.strCiudad = strCiudad;
+        this.strCodigoPostal = strCodigoPostal;
+    }
+
+    private String strCiudad;
+    private String strCodigoPostal;
 
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue("Pasto").into(CIUDAD_CAMPO).thenHit(Keys.ARROW_DOWN).thenHit(Keys.ENTER),
-                Enter.theValue("520001").into(CODIGO_POSTAL_CAMPO),
+                //Enter.theValue(strCiudad).into(CIUDAD_CAMPO).thenHit(Keys.ARROW_DOWN).thenHit(Keys.ENTER),
+                Enter.theValue(strCodigoPostal).into(CODIGO_POSTAL_CAMPO),
                 Click.on(PAIS_CAMPO),
                 Click.on(PAIS_CAMPO_COLOMBIA),
                 Scroll.to(BOTON_PASO_3),
